@@ -6,23 +6,29 @@
     <title>Sample HTML Page</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #f5f5f5;
+            color: #444;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #2ecc71;
+            color: #fff;
             text-align: center;
             padding: 1em;
         }
 
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         nav {
             background-color: #333;
-            color: white;
+            color: #fff;
             padding: 0.5em;
         }
 
@@ -36,7 +42,7 @@
 
         nav a {
             text-decoration: none;
-            color: white;
+            color: #fff;
         }
 
         section {
@@ -45,7 +51,7 @@
 
         footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 1em;
         }
@@ -54,6 +60,7 @@
 <body>
 
     <header>
+        <img src="my-image-url.jpg" alt="Header Image">
         <h1>Welcome to My Website</h1>
     </header>
 
@@ -68,11 +75,23 @@
     <section id="home">
         <h2>Home Section</h2>
         <p>This is the home section of the website.</p>
+
+        <!-- Audio Element -->
+        <audio controls>
+            <source src="my-audio-file.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
     </section>
 
     <section id="about">
         <h2>About Section</h2>
         <p>This is the about section where you can learn more about us.</p>
+
+        <!-- Video Element -->
+        <video width="400" controls>
+            <source src="my-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
     <section id="contact">
